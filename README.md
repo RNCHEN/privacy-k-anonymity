@@ -64,3 +64,8 @@ projext/
 - Evaluate privacy and utility trade-offs using DM, AECS, and NCP
 - Design and test custom risk metrics via Python notebook
 
+## 🔗 Connection
+
+If you have any questions regarding the project, feel free to reach out via email.  
+📧 Email: [rnchen0218@gmail.com](mailto:rnchen0218@gmail.com)  
+I typically respond within **one** business day.
