@@ -24,11 +24,12 @@ projext/
 2. Compile the Java project:
 
    ```bash
-   cd code
+   cd code/kanonymity
    mvn clean compile
    ```
+3. If the dataset is missing or unavailable, please download it from [this source](https://healthdata.gov/Health/COVID-19-Public-Therapeutic-Locator/rxn6-qnx8/about_data).
 
-3. Run the program:
+4. Run the program:
 
    ```bash
    mvn exec:java -Dexec.mainClass="org.example.App"
