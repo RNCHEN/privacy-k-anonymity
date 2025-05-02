@@ -1,0 +1,66 @@
+# K-Anonymity Privacy Project
+
+This project focuses on achieving **K-Anonymity** for sensitive datasets using the [ARX anonymization tool](https://arx.deidentifier.org/), along with custom metrics and evaluation scripts.
+
+## 📁 Project Structure
+
+```
+projext/
+├── code/
+│   ├── java/                  # Java source code
+│   ├── kanonymity/            # Main Java module implementing k-anonymity
+│   ├── arx-3.9.1-win-64.jar   # ARX anonymization toolkit (local JAR)
+│   └── own_metrics.ipynb      # Jupyter notebook for custom metric analysis
+├── reference/                 # Reference materials and external sources
+├── Scientific Poster/         # Presentation materials and report graphics
+├── Final Report.pdf           # Final project report
+├── 17735_Group1_Achieving k-Anonymity_ProjectDescription.pdf
+└── readme.md                  # You are here
+```
+
+## 🛠️ Getting Started
+
+1. Make sure you have **Java 17+** and **Maven** installed.
+2. Compile the Java project:
+
+   ```bash
+   cd code
+   mvn clean compile
+   ```
+
+3. Run the program:
+
+   ```bash
+   mvn exec:java -Dexec.mainClass="org.example.App"
+   ```
+
+   > If `arx-3.9.1-win-64.jar` is not in your local Maven repository, install it manually:
+   >
+   > ```bash
+   > mvn install:install-file ^
+   > -Dfile=arx-3.9.1-win-64.jar ^
+   > -DgroupId=org.deidentifier ^
+   > -DartifactId=arx ^
+   > -Dversion=3.9.1 ^
+   > -Dpackaging=jar
+   > 
+   > OR
+   > 
+   > Check the official download insrtuction here https://arx.deidentifier.org/downloads/
+   > ```
+
+## 📊 Notebooks
+
+- `own_metrics.ipynb`: Custom evaluation metrics for analyzing anonymized outputs, built in Python.
+
+## 📚 Poster and Report
+
+- Posters are located in the `Scientific Poster/` folder.
+- report is in root folder. 
+
+## ✅ Project Goals
+
+- Apply K-Anonymity to real-world datasets
+- Evaluate privacy and utility trade-offs using DM, AECS, and NCP
+- Design and test custom risk metrics via Python notebook
+
